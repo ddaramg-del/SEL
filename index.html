@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>외국인 신입 직원 SEL 학습지</title>
+    <style>
+        /* CSS 스타일링 */
+        body {
+            font-family: 'Malgun Gothic', 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f7f9;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 5px;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+        }
+
+        h2 {
+            color: #3498db;
+            margin-top: 30px;
+            border-left: 5px solid #3498db;
+            padding-left: 10px;
+            background-color: #ecf0f1;
+            padding: 8px 10px;
+            border-radius: 4px;
+        }
+
+        .section-item {
+            margin-bottom: 25px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #fff;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 8px;
+            color: #555;
+        }
+
+        textarea {
+            width: 98%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            resize: vertical;
+            min-height: 80px;
+            font-size: 14px;
+        }
+
+        .note {
+            font-size: 0.9em;
+            color: #7f8c8d;
+            margin-top: 5px;
+        }
+
+        .print-btn {
+            display: block;
+            width: 200px;
+            margin: 30px auto 10px auto;
+            padding: 12px 20px;
+            background-color: #2ecc71;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .print-btn:hover {
+            background-color: #27ae60;
+        }
+
+        /* 인쇄 시 버튼 숨기기 */
+        @media print {
+            .print-btn {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🌱 새로운 시작을 위한 사회정서 학습지</h1>
+        <p style="text-align: center; color: #7f8c8d;">(신입 외국인 직원 대상)</p>
+        
+        <h2>1. 자기 인식 (Self-Awareness)</h2>
+        <div class="section-item">
+            <label for="emotion_thermometer">감정 온도계: 요즘 직장에서 가장 자주 느끼는 감정은 무엇이며, 그 이유는 무엇인가요?</label>
+            <textarea id="emotion_thermometer" placeholder="예: 기대감, 긴장. / 새로운 업무에 도전하는 것이 기대되지만 실수할까 봐 긴장됩니다."></textarea>
+            <p class="note">자신의 감정을 솔직하게 인식하고 명명해 보세요.</p>
+        </div>
+        <div class="section-item">
+            <label for="my_strengths">나의 강점 찾기: 업무에 도움이 될 나의 강점 3가지를 적고, 각 강점을 활용할 방법을 생각해 보세요.</label>
+            <textarea id="my_strengths" placeholder="1. (강점: ), (활용 방법: )&#10;2. (강점: ), (활용 방법: )&#10;3. (강점: ), (활용 방법: )"></textarea>
+        </div>
+
+        <h2>2. 관계 기술 (Relationship Skills)</h2>
+        <div class="section-item">
+            <label for="listening_skills">효과적인 경청 체크리스트: 동료와 대화할 때 '잘 듣고 있다'는 것을 보여주기 위해 내가 할 수 있는 행동 3가지는 무엇인가요?</label>
+            <textarea id="listening_skills" placeholder="1. 시선을 맞춘다.&#10;2. 적절한 순간에 고개를 끄덕인다.&#10;3. 질문을 통해 내용을 요약하며 확인한다."></textarea>
+            <p class="note">경청은 오해를 줄이고 신뢰를 쌓는 기본입니다.</p>
+        </div>
+        <div class="section-item">
+            <label for="feedback_practice">피드백 연습: 상사에게 업무 개선을 위한 피드백을 요청하는 문장을 작성해 보세요.</label>
+            <textarea id="feedback_practice" placeholder="예: 'OOO님, 제가 이번 보고서에 대해 개선할 수 있는 부분을 알려주시면 감사하겠습니다.'"></textarea>
+        </div>
+
+        <h2>3. 책임 있는 의사 결정 (Responsible Decision-Making)</h2>
+        <div class="section-item">
+            <label for="dilemma_resolution">업무 딜레마 해결: 마감 기한이 임박했는데, 내가 만든 자료에 작은 실수가 있음을 발견했습니다. 어떻게 행동하시겠습니까? (단계별로 설명)</label>
+            <textarea id="dilemma_resolution" placeholder="1. 문제 정의: 작은 실수를 마감 전에 수정할 수 있을지 판단한다.&#10;2. 대안 탐색: A. 지금 즉시 수정하고 제출한다. B. 상사에게 보고하고 수정 시간을 요청한다.&#10;3. 선택: (선택한 대안과 이유)"></textarea>
+        </div>
+
+        <button class="print-btn" onclick="window.print()">✅ 학습지 인쇄하기</button>
+
+    </div>
+
+    <script>
+        // 현재 이 코드는 인쇄 기능 외의 복잡한 로직은 포함하지 않습니다.
+        // 필요하다면 여기에 저장, 초기화 등의 기능을 추가할 수 있습니다.
+    </script>
+</body>
+</html>
